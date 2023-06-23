@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 50px;  
+    font-family: "Arial", sans-serif; 
+      
+}
+
+h1, h3, p {
+    font-family: inherit; 
+  }
+   
+h1{
+    text-align: center;
+    font-size: 1.75em;
+}
+
+
+h3{
+    border-left : 1px black solid;
+    border-bottom : 1px black solid;
+    width: 30%;
+    padding: 5px 20px 5px 20px;
+    position: absolute;
+    margin: 0px;
+    top: 0px;
+    right: 0px;
+    text-align: center;
+    font-size: 1.25em;
+  
+}
+
+#one{
+    background-color: rgb(244, 169, 194);
+}
+#two{
+    background-color: rgb(118, 83, 83);
+    color: white;
+}
+#three{
+    background-color: blanchedalmond;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section {
+    border: 1px black solid;
+    position: relative;
+    padding : 20px;
+    background-color: gray;
+    font-weight: bold;
+    
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+    .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    section{
+        width: 33%;
+    }
+  }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    #secone, #sectwo{
+        width: 49%;
+        margin-bottom: 20px;
+    }
+    #secthree{
+        width: 99%;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    
+    .container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    #secone, #sectwo, #secthree{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+  }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    #secone, #sectwo{
+        width: 49%;
+        margin-bottom: 20px;
+    }
+    #secthree{
+        width: 99%;
+    }
+  }
